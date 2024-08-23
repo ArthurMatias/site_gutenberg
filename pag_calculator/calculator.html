@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guto Calculadora</title>
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="shortcut icon" type="image/png" href="/imgs/icone.png">
+</head>
+<body>
+
+    <header>
+        
+        <div class="logo">
+            <img src="/imgs/logo.png" alt="Logo">
+        </div>
+
+        <ul>
+            <li>
+                <button class="button" id="button_home">Home</button>
+            </li>
+
+            <li>
+                <button class="button" id="button_about">Sobre mim</button>
+            </li>
+
+            <li>
+                <button class="button" id="">Planos</button>
+            </li>
+
+            <li>
+                <button class="button" id="">Contatos</button>
+            </li>
+
+            <li>
+                <button class="button_calculator" id="button_calculator">Calculadora</button>
+            </li>
+        </ul>
+    
+    </header>
+
+    <div class="FADE"></div>
+    <div id="home" class="BG"></div>
+
+    <main>
+
+        <section>
+            <h1>Calcule agora seu percentual de gordura!</h1>
+            <p>Descubra o seu percentual de gordura com menos de 1 minuto direto pelo celular ou computador!</p>
+            <button>Clique Aqui</button>
+        </section>
+
+        <section class="box_calculator">
+
+            <h1>Calculadora de Percentual de Gordura Corporal</h1>
+
+            <h2>Preencha os valores abaixo:</h2>
+
+            <form id="form">
+                <label for="weight">Peso (kg):</label>
+                <input type="number" id="weight" required><br>
+        
+                <label for="height">Altura (cm):</label>
+                <input type="number" id="height" required><br>
+        
+                <label for="waist">Cintura (cm):</label>
+                <input type="number" id="waist" required><br>
+        
+                <label for="neck">Pescoço (cm):</label>
+                <input type="number" id="neck" required><br>
+        
+                <label for="hip">Quadril (cm):</label>
+                <input type="number" id="hip"><br>
+        
+                <label for="gender">Sexo:</label>
+                <select id="gender" required>
+                    <option value="male">Masculino</option>
+                    <option value="female">Feminino</option>
+                </select><br>
+        
+                <button type="button" onclick="calculateBodyFat()">Calcular</button>
+            </form>
+        
+            <h2 id="result"></h2>
+        </section>
+    </main>
+
+    <script src="calculator.js"></script>
+    <script src="scroll.js"></script>
+</body>
+</html>

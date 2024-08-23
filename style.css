@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100..900&display=swap');
+
+html {
+    overflow-x: hidden !important;
+}
+
+body { /*configurações globais para o documento inteiro*/
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.FADE{
+    background-image: linear-gradient(to bottom,#362306, transparent);
+    height: 140px;
+    position: relative;
+    z-index: -1;
+}
+
+.BG{
+    
+    background-image: url("./imgs/guto_bg.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:initial;
+    height:58em;
+    position: relative;
+    top: -200px;
+    z-index: -2;
+}
+
+.BG::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 140px;
+    background-image: linear-gradient(to bottom, transparent, #362306);
+}
+
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    margin-top: 1vh;
+    width: 100vw;
+}
+
+header img {
+    width: 10vw;
+    margin-left: 8vw;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    margin-right: 9vw;
+}
+  
+li {
+    list-style: none;
+    margin: 2em;
+    transition: 2s;
+}
+
+  
+.button {
+    background-color: transparent;
+    border: none;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 1vw;
+    cursor: pointer;
+    color: #fff;
+    display: inline-block;
+}
+
+.button::after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    background: rgb(255, 255, 255);
+    transition: 300ms;
+}
+
+.button:hover::after{
+    width: 100%
+}
+
+.button_calculator{
+    background-color: #362306;
+    border: none;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 1vw;
+    cursor: pointer;
+    color: #C5AD8B;
+    width: 9vw;
+    height: 4vh;
+    
+}
+
+.button_calculator:hover{
+    background-color: #C5AD8B;
+    color: #fff;
+    transition: 300ms;
+}
+
+main h1, p, h2{
+    color: #fff;
+    width: 50%;
+    align-content: center;
+}
+
+main #apresentation #text{
+    top: 60vh;
+    position: absolute;
+}
+
+main h1{
+    font-size: 4.2vw;
+    margin-left: 8vw;
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    margin-top: -160px;
+}
+
+main h1 strong{
+    color: #362306;
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+}
+
+main p{
+    font-size: 1.4vw;
+    margin-left: 8vw;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+}
+
+.call {
+    display: flex;
+    position: relative;
+    margin-top: -40vh;
+    width: 60vw;
+    margin-left: 20%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.call img{
+    width: 15vw;
+    background-color: #C5AD8B;
+    margin-left: 2vw;
+}
+
+.call div {
+    display: flex;
+    align-items: center;
+    height: 30vh;
+    background-color: #C5AD8B;
+    justify-content: space-between;
+}
+
+.call p {
+    margin-right: 2vw;
+    width: 100%;
+    margin-left: 0;
+}
+
+.call #line {
+    height: 24vh;
+    border-left: 5px solid;
+    color: #fff;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.BG_2{
+    
+    background-image: url("./imgs/guto_br_2.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:initial;
+    height:58em;
+    position: relative;
+    top: -140px;
+    z-index: -3;
+}
+
+.about h2{
+    margin-top: -660px;
+    margin-left: 8vw;
+    font-size: 3vw;
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    color: #362306;
+    text-align: end;
+    background: linear-gradient(to right, transparent,#ffffff, #ffffff);
+    padding: 0 2vw 0 0;
+}
+
+.about {
+    margin-left: 40vw;
+    
+}
+
+.BG_3{
+    
+    background-image: url("./imgs/guto_bg_3.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:initial;
+    height:58em;
+    position: relative;
+    top: 820px;
+    z-index: -4;
+}
+
+#plans{
+    margin-top: -600px;
+}
+
+#plans h2{
+    font-size: 3vw;
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    color: #362306;
+    text-align: end;
+    background: linear-gradient(to right, transparent,#ffffff, #ffffff);
+    padding: 0 2vw 0 0;
+    width: 30%;
+}
+
+#plans section p {
+    margin-left: 0vw;
+}
+
+#plans section {
+    margin-left: 19vw;
+}
+
+#plans section .box_plans {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    width: 29vw;
+    height: 40vh;
+}
+
+#plans section img {
+    width: auto;
+}
+
+#plans section .box_plans .box_box_plans .withe_plans {
+    background-color: #ffffff;
+    width: 1vw;
+    height: 40vh;
+    position:absolute;
+    z-index: 1;
+}
+
+#plans section .box_plans .box_box_plans .withe_plans.hovered {
+    width: 29vw;
+    transition: 0.5s;
+}
+
+#plans section .box_plans .box_box_plans h3 {
+    position: absolute;
+    color: #ffffff;
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    font-size: 1.6vw;
+    z-index: 1;
+    margin-left: 3vw;
+    margin-top: 16vh;
+}
+
+#plans section .fade_plans {
+    width: 20vw;
+    height: 40vh;
+    background: linear-gradient(to left, transparent,#000000b6);
+    position:absolute;
+}
+
+#plans section .box_plans .box_box_plans .withe_plans a {
+    
+    color: #362306;
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    font-size: 1.6vw;
+    z-index: 1;
+    margin-left: 3vw;
+    margin-top: 16vh;
+}
+
+#plans section .box_plans .box_box_plans .withe_plans { 
+    z-index: 2;
+    cursor: pointer;
+}
+
+.hidden-text {
+    display: none;
+}
+
+.withe_plans.hovered .hidden-text {
+    display: block;
+}
