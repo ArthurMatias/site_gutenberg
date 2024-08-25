@@ -19,7 +19,7 @@ body { /*configurações globais para o documento inteiro*/
 
 .BG{
     
-    background-image: url("./imgs/guto_bg.png");
+    background-image: url("./imgs/guto_bg.jpg");
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -182,7 +182,7 @@ main p{
 
 .BG_2{
     
-    background-image: url("./imgs/guto_br_2.png");
+    background-image: url("./imgs/guto_br_2.jpg");
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -211,8 +211,7 @@ main p{
 }
 
 .BG_3{
-    
-    background-image: url("./imgs/guto_bg_3.png");
+    background-image: url("./imgs/guto_bg_3.jpg");
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -235,11 +234,13 @@ main p{
     text-align: end;
     background: linear-gradient(to right, transparent,#ffffff, #ffffff);
     padding: 0 2vw 0 0;
+    margin-top: -6vh;
     width: 30%;
 }
 
 #plans section p {
     margin-left: 0vw;
+    color: #362306;
 }
 
 #plans section {
@@ -251,7 +252,7 @@ main p{
     flex-direction: row;
     overflow: hidden;
     width: 29vw;
-    height: 40vh;
+    height: 36vh;
 }
 
 #plans section img {
@@ -261,7 +262,7 @@ main p{
 #plans section .box_plans .box_box_plans .withe_plans {
     background-color: #ffffff;
     width: 1vw;
-    height: 40vh;
+    height: 36vh;
     position:absolute;
     z-index: 1;
 }
@@ -284,7 +285,7 @@ main p{
 
 #plans section .fade_plans {
     width: 20vw;
-    height: 40vh;
+    height: 36vh;
     background: linear-gradient(to left, transparent,#000000b6);
     position:absolute;
 }
@@ -311,4 +312,12 @@ main p{
 
 .withe_plans.hovered .hidden-text {
     display: block;
+}
+
+.ajuste_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 19vw;
+    margin-top: 4vh;
 }

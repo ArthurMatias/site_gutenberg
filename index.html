@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="modal.css">
     <link rel="shortcut icon" type="image/png" href="imgs/icone.png">
     <title>Guto Personal</title>
 </head>
@@ -27,7 +28,7 @@
             </li>
 
             <li>
-                <button class="button" id="">Planos</button>
+                <button class="button" id="button_plans">Planos</button>
             </li>
 
             <li>
@@ -70,38 +71,159 @@
         </section>
 
         <section id="plans">
-            <div class="BG_3"></div>
+            <div id="plans_hover" class="BG_3"></div>
             
             <h2>Planos</h2>
 
             <section>
                 <p>Escolha qual combina mais com você!</p>
 
-                <div id="hovered_plans1" class="box_plans">
-                    <div class="box_box_plans">
-                        <div id="hovered_plans2" class="withe_plans">
-                            <a class="hidden-text">Clique Aqui</a>
+                <div class="ajuste_content">
+                    <div id="hovered_plans1" class="box_plans">
+                        <div class="box_box_plans">
+                            <div id="hover_plans1" class="withe_plans">
+                                <a class="hidden-text">Clique Aqui</a>
+                            </div>
+                            <h3>Personal<br>Trainer</h3>
+                            <div class="fade_plans"></div>
+                            <img src="./imgs/ajuda_barra.png">
                         </div>
-                        <h3>Personal<br>Trainer</h3>
-                        <div class="fade_plans"></div>
-                        <img src="./imgs/ajuda_barra.png">
+    
+                        <dialog id="dialog_1">
+
+                            <div class="dialog_txt">
+                                <div>
+                                    <h1>Acompanhamento<br> em Dupla</h1>
+                                     <p> 
+                                        1  aula   por semana = R$560,00<br>
+                                        2  aulas por semana = R$1120,00<br>
+                                        3  aulas por semana = R$1680,00<br>
+                                        4 aulas  por semana = R$2240,00<br> 
+                                        5 aulas  por semana = R$2800,00<br>
+                                    </p>
+                                </div>
+    
+                                <div>
+                                    <h1>Acompanhamento presencial/on-line individual</h1>
+                                     <p> 
+                                        1  aula   por semana = R$360,00<br>
+                                        2  aulas por semana = R$720,00<br>
+                                        3  aulas por semana = R$1080,00<br>
+                                        4 aulas  por semana = R$1440,00<br>
+                                        5 aulas  por semana = R$1800,00<br>
+    
+                                    </p>
+                                </div>
+                            </div>
+
+                            <p id="txt_info">Avaliações físicas periódicas a cada 6 meses onde estudo toda necessidade de mudança nos treinos e prescrições.</h3>
+                            
+                            <button>OK</button>
+
+                        </dialog>
+                      
+                    </div>
+    
+                    <div id="hovered_plans2" class="box_plans">
+                        <div class="box_box_plans">
+                            <div id="hover_plans2" class="withe_plans">
+                                <a class="hidden-text">Clique Aqui</a>
+                            </div>
+                            <h3>Consultoria<br>On-line</h3>
+                            <div class="fade_plans"></div>
+                            <img src="">
+                        </div>
+    
+                        <dialog id="dialog_1">
+
+                            <div class="dialog_txt">
+                                <div>
+                                    <h1>Acompanhamento<br> em Dupla</h1>
+                                     <p> 
+                                        1  aula   por semana = R$560,00<br>
+                                        2  aulas por semana = R$1120,00<br>
+                                        3  aulas por semana = R$1680,00<br>
+                                        4 aulas  por semana = R$2240,00<br> 
+                                        5 aulas  por semana = R$2800,00<br>
+                                    </p>
+                                </div>
+    
+                                <div>
+                                    <h1>Acompanhamento presencial/on-line individual</h1>
+                                     <p> 
+                                        1  aula   por semana = R$360,00<br>
+                                        2  aulas por semana = R$720,00<br>
+                                        3  aulas por semana = R$1080,00<br>
+                                        4 aulas  por semana = R$1440,00<br>
+                                        5 aulas  por semana = R$1800,00<br>
+    
+                                    </p>
+                                </div>
+                            </div>
+
+                            <h3>Avaliações físicas periódicas a cada 6 meses onde estudo toda necessidade de mudança nos treinos e prescrições.</h3>
+                            
+                            <button>OK</button>
+
+                        </dialog>
+                      
+                    </div>
+                </div>
+
+                <div class="ajuste_content">
+                    <div id="hovered_plans3" class="box_plans">
+                        <div class="box_box_plans">
+                            <div id="hover_plans3" class="withe_plans">
+                                <a class="hidden-text">Clique Aqui</a>
+                            </div>
+                            <h3>Aula de<br>Skate</h3>
+                            <div class="fade_plans"></div>
+                            <img src="./imgs/skate.png">
+                        </div>
+    
+                        <dialog id="dialog_1">
+    
+                            <h1>Acompanhamento Personal Trainer em Dupla</h1>
+                            <h3>Avaliações físicas periódicas a cada 6 meses onde estudo toda necessidade de mudança nos treinos e prescrições.</h3>
+                            <p> 
+                                1  aula   por semana   = 560,00<br>
+                                2  aulas por semana  = 1120,00<br>
+                                3  aulas por semana  = 1680,00<br>
+                                4 aulas  por semana  = 2240,00<br> 
+                                5 aulas  por semana  = 2800,00<br>
+                            </p>
+    
+                            <button>OK</button>
+                        </dialog>
+                      
                     </div>
 
-                    <dialog>
-                        <h3>Acompanhamento Personal Trainer em Dupla</h3>
-                        <p> 
-                            1  aula   por semana   = 560,00
-                            2  aulas por semana  = 1120,00
-                            3  aulas por semana  = 1680,00
-                            4 aulas  por semana  = 2240,00  
-                            5 aulas  por semana  = 2800,00
-                            
-                            Junto com o fechamento das aulas 
-                            Realizo avaliações físicas periódicas a cada 6 meses onde estudo toda necessidade de mudança nos treinos e prescrições.
-                        
-                           </p>
-                    </dialog>
-                  
+                    <div id="hovered_plans4" class="box_plans">
+                        <div class="box_box_plans">
+                            <div id="hover_plans4" class="withe_plans">
+                                <a class="hidden-text">Clique Aqui</a>
+                            </div>
+                            <h3>Outro<br>Serviço</h3>
+                            <div class="fade_plans"></div>
+                            <img src="./imgs/halter.png">
+                        </div>
+    
+                        <dialog id="dialog_1">
+    
+                            <h1>Acompanhamento Personal Trainer em Dupla</h1>
+                            <h3>Avaliações físicas periódicas a cada 6 meses onde estudo toda necessidade de mudança nos treinos e prescrições.</h3>
+                            <p>
+                                1  aula   por semana   = 560,00<br>
+                                2  aulas por semana  = 1120,00<br>
+                                3  aulas por semana  = 1680,00<br>
+                                4 aulas  por semana  = 2240,00<br> 
+                                5 aulas  por semana  = 2800,00<br>
+                            </p>
+    
+                            <button>OK</button>
+                        </dialog>
+                      
+                    </div>
                 </div>
             </section>
 

@@ -1,0 +1,52 @@
+dialog::backdrop{
+    background-color: rgba(0, 0, 0, 0.500);
+}
+
+dialog{
+    border: none;
+    width: 60vw;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.408);
+    text-align: center;
+}
+
+dialog h1{
+    font-size: 30px;
+    color: #362306;
+    width: 100%;
+    margin: 0;
+}
+
+dialog #txt_info{
+    color: #ACACAC !important;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+}
+
+.dialog_txt div p{
+    color: #362306;
+    font-size: 16px;
+    width: 100%;
+    
+}
+
+button{
+    background-color: #362306;
+    border: none;
+    font-weight: 700;
+    font-size: 1vw;
+    cursor: pointer;
+    color: #ffffff;
+    width: 9vw;
+    height: 4vh;
+}
+
+.dialog_txt{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dialog_txt div{
+    width: 49%;
+}
